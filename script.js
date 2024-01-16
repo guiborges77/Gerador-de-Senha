@@ -7,8 +7,10 @@ let containerPassword = document.querySelector("#container-password");
 let charset = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789!@#$%";
 let novaSenha = " ";
 
+//Definir tamanho da senha conforma o usuário escolher
 sizePassword.innerHTML = sliderElement.value;
 
+//Slider para arrastar o tamanho da senha
 slider.oninput = function(){
     sizePassword.innerHTML= this.value;
 }
