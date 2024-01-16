@@ -16,6 +16,7 @@ slider.oninput = function(){
     sizePassword.innerHTML= this.value;
 }
 
+//Função para gerar uma senha aleatória
 function generatePassword(){
     let pass = "";
 
@@ -29,10 +30,12 @@ function generatePassword(){
 
 }
 
+//Função para copiar a senha ao clicar na senha
 function copyPassword(){
     navigator.clipboard.writeText(novaSenha);
 }
 
+// Função para alertar quando a senha for copiada.
 function senhaCopiada(){
     alert("Sua senha foi copiada para a área de transferência.")
 }
